@@ -1,5 +1,5 @@
 # bootstrap_portfolio
-HW Assignment #2 (week 2)
+HW Assignment #2b (week 2)
 Responsiveness Assignment
 
 
