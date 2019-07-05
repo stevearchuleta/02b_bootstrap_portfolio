@@ -1,21 +1,202 @@
-body{
-  background-image: url("../assets/images/circuit.png")
+
+/* apply box-sizing:border box; to every element on every page */
+* {
+  box-sizing: border-box;
 }
 
-/*STICKY FOOTER CSS STYLE (bootstrap 3.7.7*/
-html {
-  position: relative;
-  min-height: 100%;
+/* body */
+/*background-image from subtleimages.com*/
+body{
+  background-image: url("../assets/images/circuit.png");
+  font-size: 18px;
+  line-height: 34px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #777;
 }
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
-.footer {
-  position: absolute;
-  bottom: 0;
+
+.container{
   width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: #f5f5f5;
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
+}
+
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 20px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 700;
+  color: #4aaaa5;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 49px;
+  border-bottom: 3px solid #ddd;
+  padding-bottom: 20px;
+}
+
+h2, h3 {
+  font-size: 22px;
+}
+
+#logo {
+  width: 250px;
+  height: 90px;
+  background: #4aaaa5;
+  float: left;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  line-height: 90px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+  text-decoration: none;
+}
+/* end of body styling */
+
+
+/* navbar */
+.navbar-collapse-1{
+  position: fixed;
+  top: 0;
+  left:0;
+}
+.navbar-nav li{
+  display: inline-block;
+}
+.nav-item{
+  float:right;
+  margin-right: 25px;
+  color: #999;
+  padding: 15px;
+  border-left: 1px solid #efefef;
+}
+.nav-item:first-child {
+  border-left: 0 none;
+}
+.navbar {
+  background-color: white;
+}
+.navbar-brand {
+  height: 90px;
+  width: 250px;
+  background: #4aaaa5;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 80px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+  text-decoration: none;
+  margin-left: 30px;
+  text-align: center;
+}
+
+
+.navbar-light .navbar-brand {
+  color: #fff;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: rgba(0, 0, 0, .9);
+}
+
+.navbar-expand-lg {
+  justify-content: space-between;
+}
+
+/* end of navbar styling */
+
+.container {
+  margin-top: 40px;
+  display: inline-block;
+}
+
+#main-container {
+  padding-top: 130px;
+}
+
+.main-container {
+  background: #fff;
+  padding: 30px;
+  margin: 0 0 40px 28px;
+  width: 100%;
+  max-width: 650px;
+  float: left;
+  border: 1px solid #ddd;
+}
+
+
+#about-me {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  color: #4AAAA5;
+  font-weight: 700;
+  border-bottom: 3px solid #ddd;
+  padding-bottom: 24px;
+  padding-top: 10px;
+  padding-left: 0px;
+  width: 591px;
+  
+}
+
+
+.sidebar {
+  background: #fff;
+  padding: 30px;
+  width: 100%;
+  max-width: 270px;
+  float: right;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+h3, .sidebar, h2 {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  line-height: 22px;
+}
+
+.auth-image {
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  float: left;
+  margin-right: 25px;
+}
+
+#pantry {
+  float: right;
+}
+
+.social {
+  width: 62px;
+  height: 40px;
+  margin-top: 8px;
+  margin-right: 5px;
+}
+
+.social:last-child {
+  margin-right: 0;
+}
+
+
+/* footer */
+footer {
+  background: #666;
+  color: #fff;
+  padding: 30px 0;
+  clear: both;
+  border-top: 8px solid #4aaaa5;
+  color: #ccc;
+  font-size: 12px;
+  text-align: center;
 }
